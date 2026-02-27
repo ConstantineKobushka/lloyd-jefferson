@@ -1,0 +1,27 @@
+/* Base styles */
+@import url("modern-normalize/modern-normalize.css");
+@import url("./reset.css");
+@import url("./font.css");
+@import url("./variables.css");
+@import url("./scroll-bar.css");
+@import url("./base.css");
+
+/* Library styles */
+@import url("accordion-js/dist/accordion.min.css");
+@import url("swiper/css/bundle");
+@import url("izitoast/dist/css/iziToast.min.css");
+
+/* Layout styles */
+@import url("./header.css");
+@import url("./mobile-menu.css");
+@import url("./scroll-up.css");
+@import url("./footer.css");
+
+/* Sections style */
+@import url("./hero.css");
+@import url("./about-me.css");
+@import url("./benefits.css");
+@import url("./projects.css");
+@import url("./faq.css");
+@import url("./covers.css");
+@import url("./reviews.css");
