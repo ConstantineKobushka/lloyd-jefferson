@@ -1,0 +1,34 @@
+:root {
+  /* Colors text */
+  --color-primary: #fafafa;
+  --color-opacity: rgba(250, 250, 250, 0.4);
+
+  /* color-border */
+  --color-border: rgba(250, 250, 250, 0.2);
+  --color-border-hover: #fafafa;
+
+  --color-border-succes: #3cbc81;
+  --color-border-error: #3cbc81;
+
+  /* Colors text and background */
+  --color-blue: #0041e8;
+  --color-blue-hover: #0039cf;
+  --color-yellow: #ff7f08;
+  --color-yellow-hover: #e87207;
+  --color-green: #c6e327;
+  --color-green-hover: #b5d020;
+  --color-orange: #e6533c;
+  --color-orange-hover: #cf4b34;
+  --color-teal: #2b4441;
+  --color-teal-hover: #253b39;
+
+  --background-body: #1c1d20;
+
+  /* linear-gradient */
+  --linear-gradient-blue: linear-gradient(90deg, #001958 22.71%, #0041e8 99.91%);
+  --linear-gradient-red: linear-gradient(90deg, #69292d 22.71%, #ed3b44 99.91%);
+  --linear-gradient-yellow: linear-gradient(90deg, #ac5300 22.71%, #ff7f08 99.91%);
+  --linear-gradient-green: linear-gradient(90deg, #596808 22.71%, #c6e327 99.91%);
+  --linear-gradient-orange: linear-gradient(90deg, #9f3626 22.71%, #e6533c 99.91%);
+  --linear-gradient-teal: linear-gradient(90deg, #1e3633 22.71%, #2b4441 99.91%);
+}
