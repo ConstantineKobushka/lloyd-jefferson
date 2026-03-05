@@ -12,21 +12,21 @@
   cursor: pointer;
 }
 
-html:has(#color--blue) ::-webkit-scrollbar-thumb {
+html:has(#color-blue) ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-blue);
 }
-html:has(#color--red) ::-webkit-scrollbar-thumb {
+html:has(#color-red) ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-red);
 }
-html:has(#color--yellow) ::-webkit-scrollbar-thumb {
+html:has(#color-yellow) ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-yellow);
 }
-html:has(#color--green) ::-webkit-scrollbar-thumb {
+html:has(#color-green) ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-green);
 }
-html:has(#color--orange) ::-webkit-scrollbar-thumb {
+html:has(#color-orange) ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-orange);
 }
-html:has(#color--teal) ::-webkit-scrollbar-thumb {
+html:has(#color-teal) ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-teal);
 }

@@ -1,0 +1,89 @@
+<header class="header">
+  <div class="container">
+    <div class="header-top">
+      <div class="theme-controls">
+        <button
+          class="theme-controls-btn color-red"
+          data-color="color-red"
+        ></button>
+        <button
+          class="theme-controls-btn color-green"
+          data-color="color-green"
+        ></button>
+        <button
+          class="theme-controls-btn color-blue active"
+          data-color="color-blue"
+        ></button>
+        <button
+          class="theme-controls-btn color-orange"
+          data-color="color-orange"
+        ></button>
+        <button
+          class="theme-controls-btn color-teal"
+          data-color="color-teal"
+        ></button>
+        <button
+          class="theme-controls-btn color-yellow"
+          data-color="color-yellow"
+        ></button>
+      </div>
+    </div>
+    <div class="header-inner">
+      <a class="header-logo" href="index.html">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              /img/header/header-desktop-logo.jpg    1x,
+              /img/header/header-desktop-logo@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              /img/header/header-desktop-logo.webp    1x,
+              /img/header/header-desktop-logo@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="header-logo-img"
+            src="/img/header/header-desktop-logo.jpg"
+            alt="Lloyd Jefferson"
+            width="80"
+            height="80"
+            loading="lazy"
+          />
+        </picture>
+        <span class="header-logo-text">jefferson*</span>
+      </a>
+      <div class="header-menu-wrapper">
+        <button class="menu-btn" type="button">Menu</button>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#about-me">About me</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#benefits">Benefits</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#projects">Projects</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="header-link" href="#work-together">Order the project</a>
+
+      <button class="burger-menu-btn" type="button">
+        <svg class="burget-menu-svg" width="21" height="9">
+          <use href="/img/icons/icons-sprite.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
