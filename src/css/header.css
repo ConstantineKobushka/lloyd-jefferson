@@ -21,7 +21,7 @@
   border-radius: 50%;
   border: none;
 }
-.theme-controls-btn.active {
+.theme-controls-btn.current-color {
   display: none;
 }
 
@@ -139,7 +139,7 @@ html:has(#color-teal) .header-link {
       transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
       visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
   }
-  .menu.active {
+  .menu.show-menu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
