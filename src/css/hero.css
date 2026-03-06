@@ -6,6 +6,8 @@
   padding-top: 281px;
   padding-bottom: 32px;
   margin-bottom: 32px;
+  max-width: 320px;
+  margin: 0 auto;
 }
 [data-theme="blue"] .hero {
   background-image: url("../img/hero/hero-mobile-blue-bg.png");
@@ -97,6 +99,10 @@
 }
 
 @media only screen and (min-width: 375px) {
+  .hero {
+    max-width: 375px;
+    margin: 0 auto;
+  }
   .hero-title {
     font-size: 50px;
     margin-bottom: 212px;
@@ -109,6 +115,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   [data-theme="blue"] .hero {
     background-image: url("../img/hero/hero-tablet-blue-bg.png");
   }
@@ -166,6 +176,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   [data-theme="blue"] .hero {
     background-image: url("../img/hero/hero-desktop-blue-bg.png");
   }
