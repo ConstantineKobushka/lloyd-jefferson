@@ -23,7 +23,7 @@ body {
   padding: 32px 0;
 }
 
-.h2-title {
+.section-title {
   color: var(--color-opacity);
   font-weight: 600;
   text-transform: uppercase;

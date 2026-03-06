@@ -1,0 +1,230 @@
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 812px;
+  padding-top: 281px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+[data-theme="blue"] .hero {
+  background-image: url("../img/hero/hero-mobile-blue-bg.png");
+}
+[data-theme="red"] .hero {
+  background-image: url("../img/hero/hero-mobile-red-bg.png");
+}
+[data-theme="yellow"] .hero {
+  background-image: url("../img/hero/hero-mobile-yellow-bg.png");
+}
+[data-theme="green"] .hero {
+  background-image: url("../img/hero/hero-mobile-green-bg.png");
+}
+[data-theme="orange"] .hero {
+  background-image: url("../img/hero/hero-mobile-orange-bg.png");
+}
+[data-theme="teal"] .hero {
+  background-image: url("../img/hero/hero-mobile-teal-bg.png");
+}
+.hero-title {
+  font-size: 46px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 168px;
+}
+.hero-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.hero-social-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.hero-social-item {
+}
+.hero-social-link {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 60px;
+  border: 1px solid var(--color-opacity);
+}
+.hero-address {
+}
+.hero-address-email {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  padding: 10px 12px;
+  min-width: 178px;
+  height: 37px;
+  border-radius: 60px;
+  border: 1px solid var(--color-opacity);
+  display: inline-block;
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) {
+  [data-theme="blue"] .hero {
+    background-image: url("../img/hero/hero-mobile-blue-bg@2x.png");
+  }
+  [data-theme="red"] .hero {
+    background-image: url("../img/hero/hero-mobile-red-bg@2x.png");
+  }
+  [data-theme="yellow"] .hero {
+    background-image: url("../img/hero/hero-mobile-yellow-bg@2x.png");
+  }
+  [data-theme="green"] .hero {
+    background-image: url("../img/hero/hero-mobile-green-bg@2x.png");
+  }
+  [data-theme="orange"] .hero {
+    background-image: url("../img/hero/hero-mobile-orange-bg@2x.png");
+  }
+  [data-theme="teal"] .hero {
+    background-image: url("../img/hero/hero-mobile-teal-bg@2x.png");
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 50px;
+    margin-bottom: 212px;
+  }
+  .hero-link-wrapper {
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 4px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  [data-theme="blue"] .hero {
+    background-image: url("../img/hero/hero-tablet-blue-bg.png");
+  }
+  [data-theme="red"] .hero {
+    background-image: url("../img/hero/hero-tablet-red-bg.png");
+  }
+  [data-theme="yellow"] .hero {
+    background-image: url("../img/hero/hero-tablet-yellow-bg.png");
+  }
+  [data-theme="green"] .hero {
+    background-image: url("../img/hero/hero-tablet-green-bg.png");
+  }
+  [data-theme="orange"] .hero {
+    background-image: url("../img/hero/hero-tablet-orange-bg.png");
+  }
+  [data-theme="teal"] .hero {
+    background-image: url("../img/hero/hero-tablet-teal-bg.png");
+  }
+  .hero-title {
+    font-size: 90px;
+    margin-bottom: 187px;
+  }
+  .hero-address-email {
+    font-size: 16px;
+    padding: 18px 24px;
+    min-width: 223px;
+    height: 55px;
+  }
+  .hero-social-link {
+    font-size: 16px;
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  [data-theme="blue"] .hero {
+    background-image: url("../img/hero/hero-tablet-blue-bg@2x.png");
+  }
+  [data-theme="red"] .hero {
+    background-image: url("../img/hero/hero-tablet-red-bg@2x.png");
+  }
+  [data-theme="yellow"] .hero {
+    background-image: url("../img/hero/hero-tablet-yellow-bg@2x.png");
+  }
+  [data-theme="green"] .hero {
+    background-image: url("../img/hero/hero-tablet-green-bg@2x.png");
+  }
+  [data-theme="orange"] .hero {
+    background-image: url("../img/hero/hero-tablet-orange-bg@2x.png");
+  }
+  [data-theme="teal"] .hero {
+    background-image: url("../img/hero/hero-tablet-teal-bg@2x.png");
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  [data-theme="blue"] .hero {
+    background-image: url("../img/hero/hero-desktop-blue-bg.png");
+  }
+  [data-theme="red"] .hero {
+    background-image: url("../img/hero/hero-desktop-red-bg.png");
+  }
+  [data-theme="yellow"] .hero {
+    background-image: url("../img/hero/hero-desktop-yellow-bg.png");
+  }
+  [data-theme="green"] .hero {
+    background-image: url("../img/hero/hero-desktop-green-bg.png");
+  }
+  [data-theme="orange"] .hero {
+    background-image: url("../img/hero/hero-desktop-orange-bg.png");
+  }
+  [data-theme="teal"] .hero {
+    background-image: url("../img/hero/hero-desktop-teal-bg.png");
+  }
+  .hero-title {
+    width: 1210px;
+    margin: 0 auto;
+    margin-bottom: 243px;
+  }
+  .hero-title-span {
+    display: block;
+  }
+  .hero-social-item {
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-social-link:hover,
+  .hero-social-link:focus-visible {
+    border: 1px solid var(--color-primary);
+  }
+  .hero-address-email {
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-address-email:hover,
+  .hero-address-email:focus-visible {
+    border: 1px solid var(--color-primary);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1440px) {
+  [data-theme="blue"] .hero {
+    background-image: url("../img/hero/hero-desktop-blue-bg@2x.png");
+  }
+  [data-theme="red"] .hero {
+    background-image: url("../img/hero/hero-desktop-red-bg@2x.png");
+  }
+  [data-theme="yellow"] .hero {
+    background-image: url("../img/hero/hero-desktop-yellow-bg@2x.png");
+  }
+  [data-theme="green"] .hero {
+    background-image: url("../img/hero/hero-desktop-green-bg@2x.png");
+  }
+  [data-theme="orange"] .hero {
+    background-image: url("../img/hero/hero-desktop-orange-bg@2x.png");
+  }
+  [data-theme="teal"] .hero {
+    background-image: url("../img/hero/hero-desktop-teal-bg@2x.png");
+  }
+}

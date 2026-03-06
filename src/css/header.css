@@ -19,28 +19,28 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: none;
+  border: 2px solid var(--color-primary);
 }
 .theme-controls-btn.current-color {
   display: none;
 }
 
-.color-blue {
+.blue {
   background: var(--linear-gradient-blue);
 }
-.color-red {
+.red {
   background: var(--linear-gradient-red);
 }
-.color-yellow {
+.yellow {
   background: var(--linear-gradient-yellow);
 }
-.color-green {
+.green {
   background: var(--linear-gradient-green);
 }
-.color-orange {
+.orange {
   background: var(--linear-gradient-orange);
 }
-.color-teal {
+.teal {
   background: var(--linear-gradient-teal);
 }
 
@@ -54,6 +54,7 @@
   gap: 8px;
 }
 .header-logo-img {
+  border-radius: 18px;
 }
 .header-logo-text {
   font-size: 20px;
@@ -81,25 +82,6 @@
 }
 .burget-menu-svg {
   stroke: var(--color-primary);
-}
-
-html:has(#color-blue) .header-link {
-  background-color: var(--color-blue);
-}
-html:has(#color-red) .header-link {
-  background-color: var(--color-red);
-}
-html:has(#color-yellow) .header-link {
-  background-color: var(--color-yellow);
-}
-html:has(#color-green) .header-link {
-  background-color: var(--color-green);
-}
-html:has(#color-orange) .header-link {
-  background-color: var(--color-orange);
-}
-html:has(#color-teal) .header-link {
-  background-color: var(--color-teal);
 }
 
 @media screen and (min-width: 768px) {
@@ -167,6 +149,24 @@ html:has(#color-teal) .header-link {
     height: 55px;
     border-radius: 60px;
   }
+  [data-theme="blue"] .header-link {
+    background-color: var(--color-blue);
+  }
+  [data-theme="red"] .header-link {
+    background-color: var(--color-red);
+  }
+  [data-theme="yellow"] .header-link {
+    background-color: var(--color-yellow);
+  }
+  [data-theme="green"] .header-link {
+    background-color: var(--color-green);
+  }
+  [data-theme="orange"] .header-link {
+    background-color: var(--color-orange);
+  }
+  [data-theme="teal"] .header-link {
+    background-color: var(--color-teal);
+  }
   .burger-menu-btn {
     display: none;
   }
@@ -176,71 +176,85 @@ html:has(#color-teal) .header-link {
   .menu-btn {
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu-btn:hover {
+
+  [data-theme="blue"] .menu-btn:hover,
+  [data-theme="blue"] .menu-btn:focus-visible {
     color: var(--color-blue-hover);
   }
-  html:has(#color-blue) .menu-btn:hover {
-    color: var(--color-blue-hover);
-  }
-  html:has(#color-red) .menu-btn:hover {
+  [data-theme="red"] .menu-btn:hover,
+  [data-theme="red"] .menu-btn:focus-visible {
     color: var(--color-red-hover);
   }
-  html:has(#color-yellow) .menu-btn:hover {
+  [data-theme="yellow"] .menu-btn:hover,
+  [data-theme="yellowlow"] .menu-btn:focus-visible {
     color: var(--color-yellow-hover);
   }
-  html:has(#color-green) .menu-btn:hover {
+  [data-theme="green"] .menu-btn:hover,
+  [data-theme="green"] .menu-btn:focus-visible {
     color: var(--color-green-hover);
   }
-  html:has(#color-orange) .menu-btn:hover {
+  [data-theme="orange"] .menu-btn:hover,
+  [data-theme="orange"] .menu-btn:focus-visible {
     color: var(--color-orange-hover);
   }
-  html:has(#color-teal) .menu-btn:hover {
+  [data-theme="teal"] .menu-btn:hover,
+  [data-theme="teal"] .menu-btn:focus-visible {
     color: var(--color-teal-hover);
   }
+
   .menu-link {
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  html:has(#color-blue) .menu-link:hover {
+  [data-theme="blue"] .menu-link:hover,
+  [data-theme="blue"] .menu-link:focus-visible {
     color: var(--color-blue-hover);
   }
-  html:has(#color-red) .menu-link:hover {
+  [data-theme="red"] .menu-link:hover,
+  [data-theme="red"] .menu-link:focus-visible {
     color: var(--color-red-hover);
   }
-  html:has(#color-yellow) .menu-link:hover {
+  [data-theme="yellow"] .menu-link:hover,
+  [data-theme="yellowlow"] .menu-link:focus-visible {
     color: var(--color-yellow-hover);
   }
-  html:has(#color-green) .menu-link:hover {
+  [data-theme="green"] .menu-link:hover,
+  [data-theme="green"] .menu-link:focus-visible {
     color: var(--color-green-hover);
   }
-  html:has(#color-orange) .menu-link:hover {
+  [data-theme="orange"] .menu-link:hover,
+  [data-theme="orange"] .menu-link:focus-visible {
     color: var(--color-orange-hover);
   }
-  html:has(#color-teal) .menu-link:hover {
+  [data-theme="teal"] .menu-link:hover,
+  [data-theme="teal"] .menu-link:focus-visible {
     color: var(--color-teal-hover);
   }
 
   .header-link {
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header-link:hover {
+  [data-theme="blue"] .header-link:hover,
+  [data-theme="blue"] .header-link:focus-visible {
     background-color: var(--color-blue-hover);
   }
-  html:has(#color-blue) .header-link:hover {
-    background-color: var(--color-blue-hover);
-  }
-  html:has(#color-red) .header-link:hover {
+  [data-theme="red"] .header-link:hover,
+  [data-theme="red"] .header-link:focus-visible {
     background-color: var(--color-red-hover);
   }
-  html:has(#color-yellow) .header-link:hover {
+  [data-theme="yellow"] .header-link:hover,
+  [data-theme="yellow"] .header-link:focus-visible {
     background-color: var(--color-yellow-hover);
   }
-  html:has(#color-green) .header-link:hover {
+  [data-theme="green"] .header-link:hover,
+  [data-theme="green"] .header-link:focus-visible {
     background-color: var(--color-green-hover);
   }
-  html:has(#color-orange) .header-link:hover {
+  [data-theme="orange"] .header-link:hover,
+  [data-theme="orange"] .header-link:focus-visible {
     background-color: var(--color-orange-hover);
   }
-  html:has(#color-teal) .header-link:hover {
+  [data-theme="teal"] .header-link:hover,
+  [data-theme="teal"] .header-link:focus-visible {
     background-color: var(--color-teal-hover);
   }
 }
