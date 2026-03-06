@@ -63,6 +63,7 @@
   border: 1px solid var(--color-opacity);
 }
 .hero-address {
+  font-style: normal;
 }
 .hero-address-email {
   font-size: 14px;
