@@ -24,9 +24,10 @@ body {
 }
 
 .section-title {
-  color: var(--color-opacity);
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+  color: var(--color-opacity);
   margin-bottom: 32px;
 }
 

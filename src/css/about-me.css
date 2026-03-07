@@ -94,7 +94,7 @@
   right: 0;
 }
 .about-arrow-down {
-  stroke: #fafafa;
+  stroke: var(--color-primary);
 }
 .about-ac.is-active .about-arrow-down {
   transform: rotate(180deg);
