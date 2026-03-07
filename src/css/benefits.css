@@ -94,4 +94,7 @@
   .benefits-inner-item {
     width: calc(100% / 2);
   }
+  .benefits-link {
+    margin-left: calc(100% / 2);
+  }
 }
