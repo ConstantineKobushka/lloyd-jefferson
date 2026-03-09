@@ -10,16 +10,23 @@ document.addEventListener('click', onDocumentClick);
 init();
 
 function init() {
-  const currentColor = JSON.parse(localStorage.getItem('theme'));
-  document.body.dataset.theme = currentColor ? currentColor : 'blue';
+  const savedColor = JSON.parse(localStorage.getItem('theme'));
+  const currentColor = savedColor ? savedColor : 'blue';
+  document.body.dataset.theme = currentColor;
+  themeControls
+    .querySelector('.theme-controls-btn.current-color')
+    .classList.remove('current-color');
+  themeControls
+    .querySelector(`[data-color=${currentColor}]`)
+    .classList.add('current-color');
 }
 
 function onThemeControlsClick(event) {
   if (!event.target.matches('button')) return;
 
-  Array.from(event.currentTarget.children).forEach(function (item) {
-    item.classList.remove('current-color');
-  });
+  themeControls
+    .querySelector('.theme-controls-btn.current-color')
+    .classList.remove('current-color');
 
   event.target.classList.add('current-color');
 
