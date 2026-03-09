@@ -7,6 +7,7 @@
   padding-bottom: 32px;
   margin-bottom: 32px;
   max-width: 320px;
+  max-width: 375px;
   margin: 0 auto;
 }
 [data-theme="blue"] .hero {
@@ -102,7 +103,6 @@
 @media only screen and (min-width: 375px) {
   .hero {
     max-width: 375px;
-    margin: 0 auto;
   }
   .hero-title {
     font-size: 50px;
@@ -115,17 +115,21 @@
   }
 }
 
+@media only screen and (min-width: 390px) {
+  .hero {
+    max-width: 415px;
+  }
+}
+
 @media only screen and (min-width: 425px) {
   .hero {
-    max-width: 425px;
-    margin: 0 auto;
+    max-width: 445px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    margin: 0 auto;
   }
   [data-theme="blue"] .hero {
     background-image: url("../img/hero/hero-tablet-blue-bg.png");
@@ -186,7 +190,6 @@
 @media only screen and (min-width: 1440px) {
   .hero {
     max-width: 1440px;
-    margin: 0 auto;
   }
   [data-theme="blue"] .hero {
     background-image: url("../img/hero/hero-desktop-blue-bg.png");
