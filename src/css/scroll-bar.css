@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
   width: 15px;
-  background-color: var(--color-opacity);
+  background-color: var(--color-alpha-40);
   border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb {

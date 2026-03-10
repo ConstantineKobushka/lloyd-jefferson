@@ -60,7 +60,7 @@
 }
 .benefits-item-text {
   letter-spacing: -0.02em;
-  color: var(--color-opacity);
+  color: var(--color-alpha-40);
   flex-grow: 1;
 }
 .benefits-link {

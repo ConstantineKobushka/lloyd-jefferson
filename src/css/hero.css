@@ -61,7 +61,7 @@
   width: 37px;
   height: 37px;
   border-radius: 60px;
-  border: 1px solid var(--color-opacity);
+  border: 1px solid var(--color-alpha-40);
 }
 .hero-address {
   font-style: normal;
@@ -75,7 +75,7 @@
   min-width: 178px;
   height: 37px;
   border-radius: 60px;
-  border: 1px solid var(--color-opacity);
+  border: 1px solid var(--color-alpha-40);
   display: inline-block;
 }
 

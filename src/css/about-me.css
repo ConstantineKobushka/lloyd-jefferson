@@ -36,7 +36,7 @@
   color: var(--color-teal);
 }
 .decor {
-  color: var(--color-opacity);
+  color: var(--color-alpha-40);
 }
 .about-introduce-picture {
 }
@@ -51,19 +51,17 @@
 .about-ac {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  padding-bottom: 27px;
-  margin-top: 0;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 32px;
   margin-bottom: 0;
 }
 .about-ac + .about-ac {
   margin-top: 20px;
 }
-.about-arrow-down {
+.about-btn-svg {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-ac-header {
-  min-height: 40px;
   position: relative;
   transition: margin 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -73,9 +71,9 @@
     sans-serif;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--color-opacity);
-  padding: 0px 0px 12px 0px;
-  height: 100%;
+  color: var(--color-alpha-40);
+  padding: 0;
+  min-height: 36px;
   z-index: 1;
 }
 .about-ac-trigger::after {
@@ -88,15 +86,15 @@
   width: 36px;
   height: 36px;
   border-radius: 100px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid var(--color-border);
   position: absolute;
   top: 0;
   right: 0;
 }
-.about-arrow-down {
+.about-btn-svg {
   stroke: var(--color-primary);
 }
-.about-ac.is-active .about-arrow-down {
+.about-ac.is-active .about-btn-svg {
   transform: rotate(180deg);
 }
 .about-ac.is-active .about-ac-header {
@@ -106,17 +104,15 @@
   font:
     500 16px / 24px "Inter Tight",
     sans-serif;
-}
-.about-ac-text {
   letter-spacing: -0.32px;
-  color: #fafafa !important;
+  color: var(--color-primary) !important;
   padding: 0 !important;
   margin-bottom: 32px !important;
 }
-.about-ac-text:last-child {
-  margin-bottom: 0 !important;
+.ac.about-ac .ac-panel.about-ac-panel .ac-text.about-ac-text:last-child {
+  margin-bottom: 0px !important;
 }
-.about-ac-text.margin-text {
+.ac.about-ac .ac-panel.about-ac-panel .ac-text.about-ac-text.margin-text {
   margin-bottom: 10px !important;
 }
 
@@ -140,7 +136,7 @@
   border-radius: 100%;
   width: 110px !important;
   height: 110px;
-  border: 1px solid var(--color-opacity);
+  border: 1px solid var(--color-border);
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -180,7 +176,7 @@
   fill: none;
 }
 .about-swiper-arrow-svg {
-  stroke: #fafafa33;
+  stroke: var(--color-disable);
 }
 
 @media only screen and (min-width: 375px) {
@@ -215,10 +211,17 @@
     margin-bottom: 64px;
   }
   .about-ac {
-    padding-bottom: 31px;
+    padding-bottom: 32px;
+  }
+  .about-ac + .about-ac {
+    margin-top: 32px;
   }
   .ac.about-ac .ac-trigger.about-ac-trigger {
-    padding: 0px 0px 16px 0px;
+    min-height: 40px;
+  }
+  .about-btn {
+    width: 40px;
+    height: 40px;
   }
   .about-ac-text {
     margin-bottom: 16px !important;
