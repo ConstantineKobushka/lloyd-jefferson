@@ -12,7 +12,7 @@ init();
 function init() {
   const savedColor = JSON.parse(localStorage.getItem('theme'));
   const currentColor = savedColor ? savedColor : 'blue';
-  document.body.dataset.theme = currentColor;
+  document.documentElement.dataset.theme = currentColor;
   themeControls
     .querySelector('.theme-controls-btn.current-color')
     .classList.remove('current-color');
@@ -31,7 +31,7 @@ function onThemeControlsClick(event) {
   event.target.classList.add('current-color');
 
   const currentColor = event.target.dataset.color;
-  document.body.dataset.theme = currentColor;
+  document.documentElement.dataset.theme = currentColor;
   localStorage.setItem('theme', JSON.stringify(currentColor));
 }
 

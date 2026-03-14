@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
   background-color: var(--color-alpha-40);
   border-radius: 15px;
 }
@@ -12,21 +12,21 @@
   cursor: pointer;
 }
 
-html:has(#color-blue) ::-webkit-scrollbar-thumb {
+[data-theme="blue"] ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-blue);
 }
-html:has(#color-red) ::-webkit-scrollbar-thumb {
+[data-theme="red"] ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-red);
 }
-html:has(#color-yellow) ::-webkit-scrollbar-thumb {
+[data-theme="yellow"] ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-yellow);
 }
-html:has(#color-green) ::-webkit-scrollbar-thumb {
+[data-theme="green"] ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-green);
 }
-html:has(#color-orange) ::-webkit-scrollbar-thumb {
+[data-theme="orange"] ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-orange);
 }
-html:has(#color-teal) ::-webkit-scrollbar-thumb {
+[data-theme="teal"] ::-webkit-scrollbar-thumb {
   background: var(--linear-gradient-teal);
 }
