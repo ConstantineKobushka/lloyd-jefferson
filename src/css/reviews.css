@@ -1,5 +1,14 @@
 .reviews {
 }
+.reviews-not-found {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: none;
+}
+.reviews-not-found.active {
+  display: block;
+}
 .reviews-slider {
   margin-bottom: 32px;
 }
@@ -11,6 +20,7 @@
   border: 1px solid var(--color-border);
   border-radius: 20px;
   padding: 32px 24px;
+  height: auto;
 }
 
 .reviews-img {
