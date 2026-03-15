@@ -6,13 +6,12 @@
   --color-alpha-60: rgba(250, 250, 250, 0.6);
   --color-black: #1c1d20;
   --color-disable: #3b3b3b;
+  --color-succes: #3cbc81;
+  --color-error: #e74a3b;
 
   /* colors-border */
   --color-border: rgba(250, 250, 250, 0.2);
   --color-border-hover: #fafafa;
-
-  --color-border-succes: #3cbc81;
-  --color-border-error: #3cbc81;
 
   /* Colors text and background */
   --color-blue: #0041e8;

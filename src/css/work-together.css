@@ -1,0 +1,243 @@
+.work-together {
+  background-image: url("../img/work-together/work-together-mobile-bg.png");
+  background-repeat: no-repeat;
+  background-size: 85px 552px;
+  background-position: right top;
+  min-height: 552px;
+}
+.work-together-top {
+  position: relative;
+  margin-bottom: 64px;
+}
+.work-together-picture {
+  position: absolute;
+}
+.work-together-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+}
+.work-together-title {
+  font-size: 37px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-indent: 52px;
+}
+.work-together-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+.work-together-field + .work-together-field {
+  margin-top: 16px;
+}
+.work-together-input {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  width: 100%;
+  height: 44px;
+  padding: 0 10px 20px 10px;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  background-color: transparent;
+  outline: none;
+}
+.work-together-input::placeholder {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--color-alpha-60);
+}
+.message {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  padding-left: 10px;
+  margin-top: 4px;
+  display: none;
+}
+.error {
+  color: var(--color-error);
+}
+.success {
+  color: var(--color-succes);
+}
+.work-together-input:not(:placeholder-shown):valid {
+  --current-color: var(--color-succes);
+}
+.work-together-input:not(:placeholder-shown):invalid {
+  --current-color: var(--color-error);
+}
+.work-together-input {
+  border-bottom: 1px solid var(--current-color, var(--color-border));
+}
+.work-together-input:not(:placeholder-shown):valid ~ .success {
+  display: inline-block;
+}
+.work-together-input:not(:placeholder-shown):invalid ~ .error {
+  display: inline-block;
+}
+.work-together-btn {
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 32px;
+}
+[data-theme="blue"] .work-together-btn {
+  background-color: var(--color-blue);
+}
+[data-theme="red"] .work-together-btn {
+  background-color: var(--color-red);
+}
+[data-theme="yellow"] .work-together-btn {
+  background-color: var(--color-yellow);
+}
+[data-theme="green"] .work-together-btn {
+  background-color: var(--color-green);
+}
+[data-theme="orange"] .work-together-btn {
+  background-color: var(--color-orange);
+}
+[data-theme="teal"] .work-together-btn {
+  background-color: var(--color-teal);
+}
+.work-together-contacts {
+  font-style: normal;
+}
+.work-together-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.work-together-item {
+}
+.work-together-link {
+  font-size: 11px;
+  letter-spacing: -0.02em;
+  padding: 10px 12px;
+  border-radius: 60px;
+  border: 1px solid var(--color-border);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) {
+  .work-together {
+    background-image: url("../img/work-together/work-together-mobile-bg@2x.png");
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .work-together-title {
+    font-size: 40px;
+  }
+  .work-together-link {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together {
+    background-image: url("../img/work-together/work-together-tablet-bg.png");
+    background-size: 198px 636px;
+    min-height: 636px;
+  }
+  .work-together-img {
+    width: 70px;
+    height: 70px;
+  }
+  .work-together-title {
+    font-size: 64px;
+    text-indent: 90px;
+  }
+  .work-together-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 18px;
+  }
+  .work-together-field + .work-together-field {
+    margin-top: 0;
+  }
+  .work-together-field {
+    width: calc((100% - 214px) / 2);
+  }
+  .work-together-btn {
+    letter-spacing: -0.02em;
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+  .work-together-link {
+    font-size: 16px;
+    padding: 18px 32px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .work-together {
+    background-image: url("../img/work-together/work-together-tablet-bg@2x.png");
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .work-together {
+    background-image: url("../img/work-together/work-together-desktop-bg.png");
+    background-size: 400px 636px;
+  }
+  .work-together-field {
+    width: calc((100% - 268px) / 2);
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .work-together-input:hover,
+  .work-together-input:focus-visible {
+    border-bottom: 1px solid var(--color-primary);
+  }
+  .work-together-link {
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .work-together-link:hover,
+  .work-together-link:focus-visible {
+    border: 1px solid var(--color-primary);
+  }
+  .work-together-btn {
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  [data-theme="blue"] .work-together-btn:hover,
+  [data-theme="blue"] .work-together-btn:focus {
+    background-color: var(--color-blue-hover);
+  }
+  [data-theme="red"] .work-together-btn:hover,
+  [data-theme="red"] .work-together-btn:focus {
+    background-color: var(--color-red-hover);
+  }
+  [data-theme="yellow"] .work-together-btn:hover,
+  [data-theme="yellow"] .work-together-btn:focus {
+    background-color: var(--color-yellow-hover);
+  }
+  [data-theme="green"] .work-together-btn:hover,
+  [data-theme="green"] .work-together-btn:focus {
+    background-color: var(--color-green-hover);
+  }
+  [data-theme="orange"] .work-together-btn:hover,
+  [data-theme="orange"] .work-together-btn:focus {
+    background-color: var(--color-orange-hover);
+  }
+  [data-theme="teal"] .work-together-btn:hover,
+  [data-theme="teal"] .work-together-btn:focus {
+    background-color: var(--color-teal-hover);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1440px) {
+  .work-together {
+    background-image: url("../img/work-together/work-together-desktop-bg@2x.png");
+  }
+}

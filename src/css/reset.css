@@ -19,7 +19,8 @@ ul {
 }
 
 a {
-  color: currentColor;
+  /* color: currentColor; */
+  color: inherit;
   text-decoration: none;
 }
 

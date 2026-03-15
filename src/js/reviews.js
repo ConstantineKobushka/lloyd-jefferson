@@ -87,7 +87,6 @@ const createReviews = reviews => {
 const renderReviews = async container => {
   try {
     const { data: reviews } = await getreviews();
-    console.log(reviews);
 
     container.insertAdjacentHTML('beforeend', createReviews(reviews));
   } catch (error) {
