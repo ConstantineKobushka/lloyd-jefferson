@@ -4,6 +4,7 @@
   background-size: 85px 552px;
   background-position: right top;
   min-height: 552px;
+  position: relative;
 }
 .work-together-top {
   position: relative;
@@ -30,12 +31,15 @@
   margin-bottom: 64px;
 }
 .work-together-field + .work-together-field {
-  margin-top: 16px;
+  margin-top: 32px;
 }
 .work-together-input {
   font-size: 14px;
   letter-spacing: -0.02em;
   color: var(--color-primary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   width: 100%;
   height: 44px;
   padding: 0 10px 20px 10px;
@@ -43,6 +47,9 @@
   border-bottom: 1px solid var(--color-border);
   background-color: transparent;
   outline: none;
+}
+.work-together-input:focus {
+  text-overflow: clip;
 }
 .work-together-input::placeholder {
   font-family: "Inter Tight", sans-serif;
@@ -52,13 +59,18 @@
   letter-spacing: -0.02em;
   color: var(--color-alpha-60);
 }
+.work-together-field {
+  position: relative;
+}
 .message {
+  position: absolute;
+  left: 0;
+  bottom: -24px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
   display: inline-block;
   padding-left: 10px;
-  margin-top: 4px;
   display: none;
 }
 .error {
@@ -126,6 +138,73 @@
   border: 1px solid var(--color-border);
 }
 
+.work-together-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-backdrop);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.work-together-backdrop.is-open {
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+}
+.work-together-modal {
+  text-align: center;
+  width: 343px;
+  min-height: 276px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-black);
+}
+.work-together-modal-btn {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 0 0 20px auto;
+}
+.work-together-svg {
+  stroke: var(--color-primary);
+}
+.work-together-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.work-together-modal-text {
+  letter-spacing: -0.02em;
+  color: var(--color-alpha-60);
+}
+.iziToast > .iziToast-body {
+  display: flex;
+}
+.iziToast > .iziToast-body .iziToast-message {
+  margin: 0;
+}
+.iziToast > .iziToast-body .iziToast-texts {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.iziToast > .iziToast-close {
+  background-image: url("../img/icons/izitoast-close-icon.svg");
+  background-size: 12px 12px;
+}
+
 @media (min-resolution: 192dpi) and (min-width: 320px) {
   .work-together {
     background-image: url("../img/work-together/work-together-mobile-bg@2x.png");
@@ -178,6 +257,14 @@
   .work-together-link {
     font-size: 16px;
     padding: 18px 32px;
+  }
+  .work-together-modal {
+    width: 492px;
+    min-height: 246px;
+  }
+  .work-together-modal-btn {
+    width: 24px;
+    height: 24px;
   }
 }
 

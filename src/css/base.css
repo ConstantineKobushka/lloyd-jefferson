@@ -13,6 +13,10 @@ body {
   background-color: var(--background-body);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 320px;
   padding: 0 16px;

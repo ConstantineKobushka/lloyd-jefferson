@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-import { getreviews } from './reviews-api';
+import { getreviews } from './api';
 
 const reviewsSection = document.querySelector('.reviews');
 const reviewsListEl = document.querySelector('.reviews-wrapper');
@@ -87,7 +87,6 @@ const createReviews = reviews => {
 const renderReviews = async container => {
   try {
     const { data: reviews } = await getreviews();
-
     container.insertAdjacentHTML('beforeend', createReviews(reviews));
   } catch (error) {
     reviewsButtonsEl.remove();

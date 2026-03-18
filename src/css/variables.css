@@ -29,6 +29,7 @@
 
   --background-body: #1c1d20;
   --background-section: #242527;
+  --background-backdrop: rgba(15, 15, 16, 0.6);
 
   /* linears-gradient */
   --linear-gradient-blue: linear-gradient(90deg, #001958 22.71%, #0041e8 99.91%);
