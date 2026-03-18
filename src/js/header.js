@@ -4,6 +4,7 @@ const menu = document.querySelector('.menu');
 
 themeControls.addEventListener('click', onThemeControlsClick);
 menuBtn.addEventListener('click', onMenuBtnClick);
+menu.addEventListener('click', onMenuClick);
 document.addEventListener('keydown', onDocumentKeydown);
 document.addEventListener('click', onDocumentClick);
 
@@ -42,16 +43,25 @@ function onMenuBtnClick() {
   menuBtn.blur();
 }
 
+function onMenuClick(event) {
+  if (event.target.closest('.menu-link')) {
+    closeMenu();
+  }
+}
+
 function onDocumentKeydown(event) {
   if (event.key === 'Escape') {
-    menu.classList.remove('show-menu');
-    menuBtn.setAttribute('aria-expanded', 'false');
+    closeMenu();
   }
 }
 
 function onDocumentClick(event) {
   if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-    menu.classList.remove('show-menu');
-    menuBtn.setAttribute('aria-expanded', 'false');
+    closeMenu();
   }
+}
+
+function closeMenu() {
+  menu.classList.remove('show-menu');
+  menuBtn.setAttribute('aria-expanded', 'false');
 }
