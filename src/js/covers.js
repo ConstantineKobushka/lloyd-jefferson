@@ -1,4 +1,4 @@
-const coversSection = document.querySelector('.covers-section');
+const coversSection = document.querySelector('.covers');
 
 const observerOptions = {
   root: null,
