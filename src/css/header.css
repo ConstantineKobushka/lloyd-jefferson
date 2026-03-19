@@ -28,13 +28,13 @@
 .blue {
   background: var(--linear-gradient-blue);
 }
-.red {
+.darkred {
   background: var(--linear-gradient-red);
 }
 .yellow {
   background: var(--linear-gradient-yellow);
 }
-.green {
+.olive {
   background: var(--linear-gradient-green);
 }
 .orange {
@@ -152,13 +152,13 @@
   [data-theme="blue"] .header-link {
     background-color: var(--color-blue);
   }
-  [data-theme="red"] .header-link {
+  [data-theme="darkred"] .header-link {
     background-color: var(--color-red);
   }
   [data-theme="yellow"] .header-link {
     background-color: var(--color-yellow);
   }
-  [data-theme="green"] .header-link {
+  [data-theme="olive"] .header-link {
     background-color: var(--color-green);
   }
   [data-theme="orange"] .header-link {
@@ -181,16 +181,16 @@
   [data-theme="blue"] .menu-btn:focus-visible {
     color: var(--color-blue-hover);
   }
-  [data-theme="red"] .menu-btn:hover,
-  [data-theme="red"] .menu-btn:focus-visible {
+  [data-theme="darkred"] .menu-btn:hover,
+  [data-theme="darkred"] .menu-btn:focus-visible {
     color: var(--color-red-hover);
   }
   [data-theme="yellow"] .menu-btn:hover,
   [data-theme="yellowlow"] .menu-btn:focus-visible {
     color: var(--color-yellow-hover);
   }
-  [data-theme="green"] .menu-btn:hover,
-  [data-theme="green"] .menu-btn:focus-visible {
+  [data-theme="olive"] .menu-btn:hover,
+  [data-theme="olive"] .menu-btn:focus-visible {
     color: var(--color-green-hover);
   }
   [data-theme="orange"] .menu-btn:hover,
@@ -209,16 +209,16 @@
   [data-theme="blue"] .menu-link:focus-visible {
     color: var(--color-blue-hover);
   }
-  [data-theme="red"] .menu-link:hover,
-  [data-theme="red"] .menu-link:focus-visible {
+  [data-theme="darkred"] .menu-link:hover,
+  [data-theme="darkred"] .menu-link:focus-visible {
     color: var(--color-red-hover);
   }
   [data-theme="yellow"] .menu-link:hover,
   [data-theme="yellowlow"] .menu-link:focus-visible {
     color: var(--color-yellow-hover);
   }
-  [data-theme="green"] .menu-link:hover,
-  [data-theme="green"] .menu-link:focus-visible {
+  [data-theme="olive"] .menu-link:hover,
+  [data-theme="olive"] .menu-link:focus-visible {
     color: var(--color-green-hover);
   }
   [data-theme="orange"] .menu-link:hover,
@@ -237,16 +237,16 @@
   [data-theme="blue"] .header-link:focus-visible {
     background-color: var(--color-blue-hover);
   }
-  [data-theme="red"] .header-link:hover,
-  [data-theme="red"] .header-link:focus-visible {
+  [data-theme="darkred"] .header-link:hover,
+  [data-theme="darkred"] .header-link:focus-visible {
     background-color: var(--color-red-hover);
   }
   [data-theme="yellow"] .header-link:hover,
   [data-theme="yellow"] .header-link:focus-visible {
     background-color: var(--color-yellow-hover);
   }
-  [data-theme="green"] .header-link:hover,
-  [data-theme="green"] .header-link:focus-visible {
+  [data-theme="olive"] .header-link:hover,
+  [data-theme="olive"] .header-link:focus-visible {
     background-color: var(--color-green-hover);
   }
   [data-theme="orange"] .header-link:hover,

@@ -20,13 +20,13 @@
 [data-theme="blue"] .theme {
   color: var(--color-blue);
 }
-[data-theme="red"] .theme {
+[data-theme="darkred"] .theme {
   color: var(--color-red);
 }
 [data-theme="yellow"] .theme {
   color: var(--color-yellow);
 }
-[data-theme="green"] .theme {
+[data-theme="olive"] .theme {
   color: var(--color-green);
 }
 [data-theme="orange"] .theme {
@@ -144,7 +144,7 @@
   background-color: var(--color-blue);
   border: 1px solid transparent;
 }
-[data-theme="red"] .about-swiper-slide.swiper-slide-active {
+[data-theme="darkred"] .about-swiper-slide.swiper-slide-active {
   background-color: var(--color-red);
   border: 1px solid transparent;
 }
@@ -152,7 +152,7 @@
   background-color: var(--color-yellow);
   border: 1px solid transparent;
 }
-[data-theme="green"] .about-swiper-slide.swiper-slide-active {
+[data-theme="olive"] .about-swiper-slide.swiper-slide-active {
   background-color: var(--color-green);
   border: 1px solid transparent;
 }

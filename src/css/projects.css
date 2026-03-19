@@ -48,13 +48,13 @@
 [data-theme="blue"] .projects-link {
   background-color: var(--color-blue);
 }
-[data-theme="red"] .projects-link {
+[data-theme="darkred"] .projects-link {
   background-color: var(--color-red);
 }
 [data-theme="yellow"] .projects-link {
   background-color: var(--color-yellow);
 }
-[data-theme="green"] .projects-link {
+[data-theme="olive"] .projects-link {
   background-color: var(--color-green);
 }
 [data-theme="orange"] .projects-link {
@@ -181,16 +181,16 @@
   [data-theme="blue"] .projects-link:focus {
     background-color: var(--color-blue-hover);
   }
-  [data-theme="red"] .projects-link:hover,
-  [data-theme="red"] .projects-link:focus {
+  [data-theme="darkred"] .projects-link:hover,
+  [data-theme="darkred"] .projects-link:focus {
     background-color: var(--color-red-hover);
   }
   [data-theme="yellow"] .projects-link:hover,
   [data-theme="yellow"] .projects-link:focus {
     background-color: var(--color-yellow-hover);
   }
-  [data-theme="green"] .projects-link:hover,
-  [data-theme="green"] .projects-link:focus {
+  [data-theme="olive"] .projects-link:hover,
+  [data-theme="olive"] .projects-link:focus {
     background-color: var(--color-green-hover);
   }
   [data-theme="orange"] .projects-link:hover,

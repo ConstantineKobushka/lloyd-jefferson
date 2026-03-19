@@ -1,10 +1,12 @@
 .work-together {
+  position: relative;
   background-image: url("../img/work-together/work-together-mobile-bg.png");
   background-repeat: no-repeat;
   background-size: 85px 552px;
   background-position: right top;
   min-height: 552px;
-  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
 }
 .work-together-top {
   position: relative;
@@ -105,13 +107,13 @@
 [data-theme="blue"] .work-together-btn {
   background-color: var(--color-blue);
 }
-[data-theme="red"] .work-together-btn {
+[data-theme="darkred"] .work-together-btn {
   background-color: var(--color-red);
 }
 [data-theme="yellow"] .work-together-btn {
   background-color: var(--color-yellow);
 }
-[data-theme="green"] .work-together-btn {
+[data-theme="olive"] .work-together-btn {
   background-color: var(--color-green);
 }
 [data-theme="orange"] .work-together-btn {
@@ -212,6 +214,9 @@
 }
 
 @media only screen and (min-width: 375px) {
+  .work-together {
+    max-width: 375px;
+  }
   .work-together-title {
     font-size: 40px;
   }
@@ -220,11 +225,24 @@
   }
 }
 
+@media only screen and (min-width: 390px) {
+  .work-together {
+    max-width: 390px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .work-together {
+    max-width: 425px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .work-together {
     background-image: url("../img/work-together/work-together-tablet-bg.png");
     background-size: 198px 636px;
     min-height: 636px;
+    max-width: 768px;
   }
   .work-together-img {
     width: 70px;
@@ -278,6 +296,7 @@
   .work-together {
     background-image: url("../img/work-together/work-together-desktop-bg.png");
     background-size: 400px 636px;
+    max-width: 1440px;
   }
   .work-together-field {
     width: calc((100% - 268px) / 2);
@@ -301,16 +320,16 @@
   [data-theme="blue"] .work-together-btn:focus {
     background-color: var(--color-blue-hover);
   }
-  [data-theme="red"] .work-together-btn:hover,
-  [data-theme="red"] .work-together-btn:focus {
+  [data-theme="darkred"] .work-together-btn:hover,
+  [data-theme="darkred"] .work-together-btn:focus {
     background-color: var(--color-red-hover);
   }
   [data-theme="yellow"] .work-together-btn:hover,
   [data-theme="yellow"] .work-together-btn:focus {
     background-color: var(--color-yellow-hover);
   }
-  [data-theme="green"] .work-together-btn:hover,
-  [data-theme="green"] .work-together-btn:focus {
+  [data-theme="olive"] .work-together-btn:hover,
+  [data-theme="olive"] .work-together-btn:focus {
     background-color: var(--color-green-hover);
   }
   [data-theme="orange"] .work-together-btn:hover,

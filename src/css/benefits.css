@@ -33,13 +33,13 @@
 [data-theme="blue"] .benefits-item-icon {
   background-color: var(--color-blue);
 }
-[data-theme="red"] .benefits-item-icon {
+[data-theme="darkred"] .benefits-item-icon {
   background-color: var(--color-red);
 }
 [data-theme="yellow"] .benefits-item-icon {
   background-color: var(--color-yellow);
 }
-[data-theme="green"] .benefits-item-icon {
+[data-theme="olive"] .benefits-item-icon {
   background-color: var(--color-green);
 }
 [data-theme="orange"] .benefits-item-icon {

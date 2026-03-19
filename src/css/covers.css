@@ -11,13 +11,13 @@
 [data-theme="blue"] .covers-wrraper {
   background-image: url("../img/covers/covers-mobile-blue-bg.png");
 }
-[data-theme="red"] .covers-wrraper {
+[data-theme="darkred"] .covers-wrraper {
   background-image: url("../img/covers/covers-mobile-red-bg.png");
 }
 [data-theme="yellow"] .covers-wrraper {
   background-image: url("../img/covers/covers-mobile-yellow-bg.png");
 }
-[data-theme="green"] .covers-wrraper {
+[data-theme="olive"] .covers-wrraper {
   background-image: url("../img/covers/covers-mobile-green-bg.png");
 }
 [data-theme="orange"] .covers-wrraper {
@@ -61,13 +61,13 @@
   [data-theme="blue"] .covers-wrraper {
     background-image: url("../img/covers/covers-mobile-blue-bg@2x.png");
   }
-  [data-theme="red"] .covers-wrraper {
+  [data-theme="darkred"] .covers-wrraper {
     background-image: url("../img/covers/covers-mobile-red-bg@2x.png");
   }
   [data-theme="yellow"] .covers-wrraper {
     background-image: url("../img/covers/covers-mobile-yellow-bg@2x.png");
   }
-  [data-theme="green"] .covers-wrraper {
+  [data-theme="olive"] .covers-wrraper {
     background-image: url("../img/covers/covers-mobile-green-bg@2x.png");
   }
   [data-theme="orange"] .covers-wrraper {
@@ -107,13 +107,13 @@
   [data-theme="blue"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-blue-bg.png");
   }
-  [data-theme="red"] .covers-wrraper {
+  [data-theme="darkred"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-red-bg.png");
   }
   [data-theme="yellow"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-yellow-bg.png");
   }
-  [data-theme="green"] .covers-wrraper {
+  [data-theme="olive"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-green-bg.png");
   }
   [data-theme="orange"] .covers-wrraper {
@@ -137,13 +137,13 @@
   [data-theme="blue"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-blue-bg@2x.png");
   }
-  [data-theme="red"] .covers-wrraper {
+  [data-theme="darkred"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-red-bg@2x.png");
   }
   [data-theme="yellow"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-yellow-bg@2x.png");
   }
-  [data-theme="green"] .covers-wrraper {
+  [data-theme="olive"] .covers-wrraper {
     background-image: url("../img/covers/covers-tablet-green-bg@2x.png");
   }
   [data-theme="orange"] .covers-wrraper {
@@ -162,13 +162,13 @@
   [data-theme="blue"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-blue-bg.png");
   }
-  [data-theme="red"] .covers-wrraper {
+  [data-theme="darkred"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-red-bg.png");
   }
   [data-theme="yellow"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-yellow-bg.png");
   }
-  [data-theme="green"] .covers-wrraper {
+  [data-theme="olive"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-green-bg.png");
   }
   [data-theme="orange"] .covers-wrraper {
@@ -189,13 +189,13 @@
   [data-theme="blue"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-blue-bg@2x.png");
   }
-  [data-theme="red"] .covers-wrraper {
+  [data-theme="darkred"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-red-bg@2x.png");
   }
   [data-theme="yellow"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-yellow-bg@2x.png");
   }
-  [data-theme="green"] .covers-wrraper {
+  [data-theme="olive"] .covers-wrraper {
     background-image: url("../img/covers/covers-desktop-green-bg@2x.png");
   }
   [data-theme="orange"] .covers-wrraper {
