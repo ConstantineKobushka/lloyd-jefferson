@@ -25,7 +25,6 @@
   font:
     600 20px / 30px "Inter Tight",
     sans-serif;
-  letter-spacing: -0.4px;
   text-transform: uppercase;
   color: var(--color-primary);
   padding: 0;
@@ -64,7 +63,6 @@
   font:
     500 16px / 24px "Inter Tight",
     sans-serif;
-  letter-spacing: -0.32px;
   color: var(--color-alpha-60) !important;
   padding: 0 !important;
 }
@@ -85,8 +83,6 @@
   }
   .faq-ac + .faq-ac {
     padding-top: 32px;
-  }
-  .faq-ac .faq-trigger.faq-ac-trigger {
   }
   .faq-ac-span {
     min-height: 40px;

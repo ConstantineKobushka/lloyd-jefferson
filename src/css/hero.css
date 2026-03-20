@@ -32,7 +32,6 @@
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--color-primary);
   margin-bottom: 168px;
 }
 .hero-link-wrapper {
@@ -46,14 +45,9 @@
   align-items: center;
   gap: 4px;
 }
-.hero-social-item {
-}
 .hero-social-link {
   font-size: 14px;
-  line-height: 1;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,8 +62,6 @@
 .hero-address-email {
   font-size: 14px;
   line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--color-primary);
   padding: 10px 12px;
   min-width: 178px;
   height: 37px;

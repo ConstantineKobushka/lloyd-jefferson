@@ -37,7 +37,6 @@
 }
 .work-together-input {
   font-size: 14px;
-  letter-spacing: -0.02em;
   color: var(--color-primary);
   overflow: hidden;
   white-space: nowrap;
@@ -58,7 +57,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
   color: var(--color-alpha-60);
 }
 .work-together-field {
@@ -70,7 +68,6 @@
   bottom: -24px;
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: -0.02em;
   display: inline-block;
   padding-left: 10px;
   display: none;
@@ -97,7 +94,7 @@
   display: inline-block;
 }
 .work-together-btn {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.32px;
   color: var(--color-primary);
   width: 100px;
   height: 100px;
@@ -130,11 +127,8 @@
   align-items: center;
   gap: 4px;
 }
-.work-together-item {
-}
 .work-together-link {
   font-size: 11px;
-  letter-spacing: -0.02em;
   padding: 10px 12px;
   border-radius: 60px;
   border: 1px solid var(--color-border);
@@ -185,11 +179,10 @@
 .work-together-modal-title {
   font-weight: 600;
   font-size: 20px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.32px;
   margin-bottom: 16px;
 }
 .work-together-modal-text {
-  letter-spacing: -0.02em;
   color: var(--color-alpha-60);
 }
 .iziToast > .iziToast-body {
@@ -268,7 +261,6 @@
     width: calc((100% - 214px) / 2);
   }
   .work-together-btn {
-    letter-spacing: -0.02em;
     width: 150px;
     height: 150px;
     margin-top: 0;

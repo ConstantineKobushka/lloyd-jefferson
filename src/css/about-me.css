@@ -15,8 +15,6 @@
   border-radius: 24px;
   min-height: 420px;
 }
-.theme {
-}
 [data-theme="blue"] .theme {
   color: var(--color-blue);
 }
@@ -37,8 +35,6 @@
 }
 .decor {
   color: var(--color-alpha-40);
-}
-.about-introduce-picture {
 }
 .about-introduce-img {
   border-radius: 24px;
@@ -69,7 +65,6 @@
   font:
     600 16px / 1.5 "Inter Tight",
     sans-serif;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--color-alpha-40);
   padding: 0;
@@ -104,9 +99,8 @@
   font:
     500 16px / 24px "Inter Tight",
     sans-serif;
-  letter-spacing: -0.32px;
-  color: var(--color-primary) !important;
-  padding: 0 !important;
+  color: var(--color-primary);
+  padding: 0;
   margin-bottom: 32px !important;
 }
 .ac.about-ac .ac-panel.about-ac-panel .ac-text.about-ac-text:last-child {
@@ -125,13 +119,10 @@
   width: 220px;
   margin-left: 0;
 }
-.about-swiper-wrapper {
-}
 .about-swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: -0.02em;
   color: var(--color-primary);
   border-radius: 100%;
   width: 110px !important;
