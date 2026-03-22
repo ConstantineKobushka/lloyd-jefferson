@@ -2,6 +2,8 @@
 import './js/header';
 import './js/mobile-menu';
 import './js/scroll-up';
+// import './js/observer';
+// import './js/swiperKeyboard';
 
 // Sections
 import './js/about-me';

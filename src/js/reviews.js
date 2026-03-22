@@ -1,5 +1,7 @@
 import Swiper from 'swiper/bundle';
+
 import { getreviews } from './api';
+import { attachSwiperKeyboardOnView } from './swiperWithObserver';
 
 const reviewsSection = document.querySelector('.reviews');
 const reviewsListEl = document.querySelector('.reviews-wrapper');
@@ -29,37 +31,11 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
   },
 });
 
-const handleKeyDown = event => {
-  switch (event.key) {
-    case 'ArrowRight':
-      reviewsSwiper.slideNext(1000);
-      break;
-    case 'ArrowLeft':
-      reviewsSwiper.slidePrev(1000);
-      break;
-    case 'Tab':
-      event.preventDefault();
-      reviewsSwiper.slideNext(1000);
-      break;
-  }
-};
-
-const observerOptions = {
-  root: null,
-  rootMargin: '0px 0px 0px 0px',
-  threshold: 1,
-};
-
-const observerCallBack = entries => {
-  if (entries[0].isIntersecting) {
-    document.addEventListener('keydown', handleKeyDown);
-  } else {
-    document.removeEventListener('keydown', handleKeyDown);
-  }
-};
-
-const observer = new IntersectionObserver(observerCallBack, observerOptions);
-observer.observe(reviewsSection);
+attachSwiperKeyboardOnView({
+  swiper: reviewsSwiper,
+  element: reviewsSection,
+  threshold: 0.5,
+});
 
 const createReviewItem = ({ author, avatar_url, review }) => {
   return `
