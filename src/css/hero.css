@@ -8,24 +8,7 @@
   margin-bottom: 32px;
   max-width: 320px;
   margin: 0 auto;
-}
-[data-theme="blue"] .hero {
-  background-image: url("../img/hero/hero-mobile-blue-bg.png");
-}
-[data-theme="darkred"] .hero {
-  background-image: url("../img/hero/hero-mobile-red-bg.png");
-}
-[data-theme="yellow"] .hero {
-  background-image: url("../img/hero/hero-mobile-yellow-bg.png");
-}
-[data-theme="olive"] .hero {
-  background-image: url("../img/hero/hero-mobile-green-bg.png");
-}
-[data-theme="orange"] .hero {
-  background-image: url("../img/hero/hero-mobile-orange-bg.png");
-}
-[data-theme="teal"] .hero {
-  background-image: url("../img/hero/hero-mobile-teal-bg.png");
+  background-image: var(--hero-bg-mobile);
 }
 .hero-title {
   font-size: 46px;
@@ -71,23 +54,8 @@
 }
 
 @media (min-resolution: 192dpi) and (min-width: 320px) {
-  [data-theme="blue"] .hero {
-    background-image: url("../img/hero/hero-mobile-blue-bg@2x.png");
-  }
-  [data-theme="darkred"] .hero {
-    background-image: url("../img/hero/hero-mobile-red-bg@2x.png");
-  }
-  [data-theme="yellow"] .hero {
-    background-image: url("../img/hero/hero-mobile-yellow-bg@2x.png");
-  }
-  [data-theme="olive"] .hero {
-    background-image: url("../img/hero/hero-mobile-green-bg@2x.png");
-  }
-  [data-theme="orange"] .hero {
-    background-image: url("../img/hero/hero-mobile-orange-bg@2x.png");
-  }
-  [data-theme="teal"] .hero {
-    background-image: url("../img/hero/hero-mobile-teal-bg@2x.png");
+  .hero {
+    background-image: var(--hero-bg-mobile-2x);
   }
 }
 
@@ -121,24 +89,7 @@
 @media only screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-  }
-  [data-theme="blue"] .hero {
-    background-image: url("../img/hero/hero-tablet-blue-bg.png");
-  }
-  [data-theme="darkred"] .hero {
-    background-image: url("../img/hero/hero-tablet-red-bg.png");
-  }
-  [data-theme="yellow"] .hero {
-    background-image: url("../img/hero/hero-tablet-yellow-bg.png");
-  }
-  [data-theme="olive"] .hero {
-    background-image: url("../img/hero/hero-tablet-green-bg.png");
-  }
-  [data-theme="orange"] .hero {
-    background-image: url("../img/hero/hero-tablet-orange-bg.png");
-  }
-  [data-theme="teal"] .hero {
-    background-image: url("../img/hero/hero-tablet-teal-bg.png");
+    background-image: var(--hero-bg-tablet);
   }
   .hero-title {
     font-size: 90px;
@@ -158,47 +109,15 @@
 }
 
 @media (min-resolution: 192dpi) and (min-width: 768px) {
-  [data-theme="blue"] .hero {
-    background-image: url("../img/hero/hero-tablet-blue-bg@2x.png");
-  }
-  [data-theme="darkred"] .hero {
-    background-image: url("../img/hero/hero-tablet-red-bg@2x.png");
-  }
-  [data-theme="yellow"] .hero {
-    background-image: url("../img/hero/hero-tablet-yellow-bg@2x.png");
-  }
-  [data-theme="olive"] .hero {
-    background-image: url("../img/hero/hero-tablet-green-bg@2x.png");
-  }
-  [data-theme="orange"] .hero {
-    background-image: url("../img/hero/hero-tablet-orange-bg@2x.png");
-  }
-  [data-theme="teal"] .hero {
-    background-image: url("../img/hero/hero-tablet-teal-bg@2x.png");
+  .hero {
+    background-image: var(--hero-bg-tablet-2x);
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero {
     max-width: 1440px;
-  }
-  [data-theme="blue"] .hero {
-    background-image: url("../img/hero/hero-desktop-blue-bg.png");
-  }
-  [data-theme="darkred"] .hero {
-    background-image: url("../img/hero/hero-desktop-red-bg.png");
-  }
-  [data-theme="yellow"] .hero {
-    background-image: url("../img/hero/hero-desktop-yellow-bg.png");
-  }
-  [data-theme="olive"] .hero {
-    background-image: url("../img/hero/hero-desktop-green-bg.png");
-  }
-  [data-theme="orange"] .hero {
-    background-image: url("../img/hero/hero-desktop-orange-bg.png");
-  }
-  [data-theme="teal"] .hero {
-    background-image: url("../img/hero/hero-desktop-teal-bg.png");
+    background-image: var(--hero-bg-desktop);
   }
   .hero-title {
     width: 1210px;
@@ -225,22 +144,7 @@
 }
 
 @media (min-resolution: 192dpi) and (min-width: 1440px) {
-  [data-theme="blue"] .hero {
-    background-image: url("../img/hero/hero-desktop-blue-bg@2x.png");
-  }
-  [data-theme="darkred"] .hero {
-    background-image: url("../img/hero/hero-desktop-red-bg@2x.png");
-  }
-  [data-theme="yellow"] .hero {
-    background-image: url("../img/hero/hero-desktop-yellow-bg@2x.png");
-  }
-  [data-theme="olive"] .hero {
-    background-image: url("../img/hero/hero-desktop-green-bg@2x.png");
-  }
-  [data-theme="orange"] .hero {
-    background-image: url("../img/hero/hero-desktop-orange-bg@2x.png");
-  }
-  [data-theme="teal"] .hero {
-    background-image: url("../img/hero/hero-desktop-teal-bg@2x.png");
+  .hero {
+    background-image: var(--hero-bg-desktop-2x);
   }
 }

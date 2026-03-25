@@ -13,17 +13,19 @@
   --color-border: rgba(250, 250, 250, 0.2);
   --color-border-hover: #fafafa;
 
-  /* Colors text and background */
+  /* Colors background and theme */
+  --theme-color: transparent;
+  --theme-color-hover: transparent;
   --color-blue: #0041e8;
   --color-blue-hover: #0039cf;
   --color-red: #ed3b44;
   --color-red-hover: #e0373f;
-  --color-yellow: #ff7f08;
-  --color-yellow-hover: #e87207;
-  --color-green: #c6e327;
-  --color-green-hover: #b5d020;
-  --color-orange: #e6533c;
-  --color-orange-hover: #cf4b34;
+  --color-orange: #ff7f08;
+  --color-orange-hover: #e87207;
+  --color-olive: #c6e327;
+  --color-olive-hover: #b5d020;
+  --color-coral: #e6533c;
+  --color-coral-hover: #cf4b34;
   --color-teal: #2b4441;
   --color-teal-hover: #253b39;
 
@@ -32,10 +34,161 @@
   --background-backdrop: rgba(15, 15, 16, 0.6);
 
   /* linears-gradient */
+  --theme-linear-gradient: none;
   --linear-gradient-blue: linear-gradient(90deg, #001958 22.71%, #0041e8 99.91%);
   --linear-gradient-red: linear-gradient(90deg, #69292d 22.71%, #ed3b44 99.91%);
-  --linear-gradient-yellow: linear-gradient(90deg, #ac5300 22.71%, #ff7f08 99.91%);
-  --linear-gradient-green: linear-gradient(90deg, #596808 22.71%, #c6e327 99.91%);
-  --linear-gradient-orange: linear-gradient(90deg, #9f3626 22.71%, #e6533c 99.91%);
+  --linear-gradient-orange: linear-gradient(90deg, #ac5300 22.71%, #ff7f08 99.91%);
+  --linear-gradient-olive: linear-gradient(90deg, #596808 22.71%, #c6e327 99.91%);
+  --linear-gradient-coral: linear-gradient(90deg, #9f3626 22.71%, #e6533c 99.91%);
   --linear-gradient-teal: linear-gradient(90deg, #1e3633 22.71%, #2b4441 99.91%);
+
+  /* Background-image */
+  --mobile-menu-bg: none;
+
+  --hero-bg-mobile: none;
+  --hero-bg-mobile-2x: none;
+  --hero-bg-tablet: none;
+  --hero-bg-tablet-2x: none;
+  --hero-bg-desktop: none;
+  --hero-bg-desktop-2x: none;
+
+  --covers-bg-mobile: none;
+  --covers-bg-mobile-2x: none;
+  --covers-bg-tablet: none;
+  --covers-bg-tablet-2x: none;
+  --covers-bg-desktop: none;
+  --covers-bg-desktop-2x: none;
+}
+
+[data-theme="blue"] {
+  --theme-color: var(--color-blue);
+  --theme-color-hover: var(--color-blue-hover);
+  --theme-linear-gradient: var(--linear-gradient-blue);
+
+  --mobile-menu-bg: url("../img/mobile-menu/mobile-menu-blue-bg.png");
+  --mobile-menu-bg-2x: url("../img/mobile-menu/mobile-menu-blue-bg@2x.png");
+
+  --hero-bg-mobile: url("../img/hero/hero-mobile-blue-bg.png");
+  --hero-bg-mobile-2x: url("../img/hero/hero-mobile-blue-bg@2x.png");
+  --hero-bg-tablet: url("../img/hero/hero-tablet-blue-bg.png");
+  --hero-bg-tablet-2x: url("../img/hero/hero-tablet-blue-bg@2x.png");
+  --hero-bg-desktop: url("../img/hero/hero-desktop-blue-bg.png");
+  --hero-bg-desktop-2x: url("../img/hero/hero-desktop-blue-bg@2x.png");
+
+  --covers-bg-mobile: url("../img/covers/covers-mobile-blue-bg.png");
+  --covers-bg-mobile-2x: url("../img/covers/covers-mobile-blue-bg@2x.png");
+  --covers-bg-tablet: url("../img/covers/covers-tablet-blue-bg.png");
+  --covers-bg-tablet-2x: url("../img/covers/covers-tablet-blue-bg@2x.png");
+  --covers-bg-desktop: url("../img/covers/covers-desktop-blue-bg.png");
+  --covers-bg-desktop-2x: url("../img/covers/covers-desktop-blue-bg@2x.png");
+}
+[data-theme="darkred"] {
+  --theme-color: var(--color-red);
+  --theme-color-hover: var(--color-red-hover);
+  --theme-linear-gradient: var(--linear-gradient-red);
+
+  --mobile-menu-bg: url("../img/mobile-menu/mobile-menu-red-bg.png");
+  --mobile-menu-bg-2x: url("../img/mobile-menu/mobile-menu-red-bg@2x.png");
+
+  --hero-bg-mobile: url("../img/hero/hero-mobile-red-bg.png");
+  --hero-bg-mobile-2x: url("../img/hero/hero-mobile-red-bg@2x.png");
+  --hero-bg-tablet: url("../img/hero/hero-tablet-red-bg.png");
+  --hero-bg-tablet-2x: url("../img/hero/hero-tablet-red-bg@2x.png");
+  --hero-bg-desktop: url("../img/hero/hero-desktop-red-bg.png");
+  --hero-bg-desktop-2x: url("../img/hero/hero-desktop-red-bg@2x.png");
+
+  --covers-bg-mobile: url("../img/covers/covers-mobile-red-bg.png");
+  --covers-bg-mobile-2x: url("../img/covers/covers-mobile-red-bg@2x.png");
+  --covers-bg-tablet: url("../img/covers/covers-tablet-red-bg.png");
+  --covers-bg-tablet-2x: url("../img/covers/covers-tablet-red-bg@2x.png");
+  --covers-bg-desktop: url("../img/covers/covers-desktop-red-bg.png");
+  --covers-bg-desktop-2x: url("../img/covers/covers-desktop-red-bg@2x.png");
+}
+[data-theme="orange"] {
+  --theme-color: var(--color-orange);
+  --theme-color-hover: var(--color-orange-hover);
+  --theme-linear-gradient: var(--linear-gradient-orange);
+
+  --mobile-menu-bg: url("../img/mobile-menu/mobile-menu-orange-bg.png");
+  --mobile-menu-bg-2x: url("../img/mobile-menu/mobile-menu-orange-bg@2x.png");
+
+  --hero-bg-mobile: url("../img/hero/hero-mobile-orange-bg.png");
+  --hero-bg-mobile-2x: url("../img/hero/hero-mobile-orange-bg@2x.png");
+  --hero-bg-tablet: url("../img/hero/hero-tablet-orange-bg.png");
+  --hero-bg-tablet-2x: url("../img/hero/hero-tablet-orange-bg@2x.png");
+  --hero-bg-desktop: url("../img/hero/hero-desktop-orange-bg.png");
+  --hero-bg-desktop-2x: url("../img/hero/hero-desktop-orange-bg@2x.png");
+
+  --covers-bg-mobile: url("../img/covers/covers-mobile-orange-bg.png");
+  --covers-bg-mobile-2x: url("../img/covers/covers-mobile-orange-bg@2x.png");
+  --covers-bg-tablet: url("../img/covers/covers-tablet-orange-bg.png");
+  --covers-bg-tablet-2x: url("../img/covers/covers-tablet-orange-bg@2x.png");
+  --covers-bg-desktop: url("../img/covers/covers-desktop-orange-bg.png");
+  --covers-bg-desktop-2x: url("../img/covers/covers-desktop-orange-bg@2x.png");
+}
+[data-theme="olive"] {
+  --theme-color: var(--color-olive);
+  --theme-color-hover: var(--color-olive-hover);
+  --theme-linear-gradient: var(--linear-gradient-olive);
+
+  --mobile-menu-bg: url("../img/mobile-menu/mobile-menu-olive-bg.png");
+  --mobile-menu-bg-2x: url("../img/mobile-menu/mobile-menu-olive-bg@2x.png");
+
+  --hero-bg-mobile: url("../img/hero/hero-mobile-olive-bg.png");
+  --hero-bg-mobile-2x: url("../img/hero/hero-mobile-olive-bg@2x.png");
+  --hero-bg-tablet: url("../img/hero/hero-tablet-olive-bg.png");
+  --hero-bg-tablet-2x: url("../img/hero/hero-tablet-olive-bg@2x.png");
+  --hero-bg-desktop: url("../img/hero/hero-desktop-olive-bg.png");
+  --hero-bg-desktop-2x: url("../img/hero/hero-desktop-olive-bg@2x.png");
+
+  --covers-bg-mobile: url("../img/covers/covers-mobile-olive-bg.png");
+  --covers-bg-mobile-2x: url("../img/covers/covers-mobile-olive-bg@2x.png");
+  --covers-bg-tablet: url("../img/covers/covers-tablet-olive-bg.png");
+  --covers-bg-tablet-2x: url("../img/covers/covers-tablet-olive-bg@2x.png");
+  --covers-bg-desktop: url("../img/covers/covers-desktop-olive-bg.png");
+  --covers-bg-desktop-2x: url("../img/covers/covers-desktop-olive-bg@2x.png");
+}
+[data-theme="coral"] {
+  --theme-color: var(--color-coral);
+  --theme-color-hover: var(--color-coral-hover);
+  --theme-linear-gradient: var(--linear-gradient-coral);
+
+  --mobile-menu-bg: url("../img/mobile-menu/mobile-menu-coral-bg.png");
+  --mobile-menu-bg-2x: url("../img/mobile-menu/mobile-menu-coral-bg@2x.png");
+
+  --hero-bg-mobile: url("../img/hero/hero-mobile-coral-bg.png");
+  --hero-bg-mobile-2x: url("../img/hero/hero-mobile-coral-bg@2x.png");
+  --hero-bg-tablet: url("../img/hero/hero-tablet-coral-bg.png");
+  --hero-bg-tablet-2x: url("../img/hero/hero-tablet-coral-bg@2x.png");
+  --hero-bg-desktop: url("../img/hero/hero-desktop-coral-bg.png");
+  --hero-bg-desktop-2x: url("../img/hero/hero-desktop-coral-bg@2x.png");
+
+  --covers-bg-mobile: url("../img/covers/covers-mobile-coral-bg.png");
+  --covers-bg-mobile-2x: url("../img/covers/covers-mobile-coral-bg@2x.png");
+  --covers-bg-tablet: url("../img/covers/covers-tablet-coral-bg.png");
+  --covers-bg-tablet-2x: url("../img/covers/covers-tablet-coral-bg@2x.png");
+  --covers-bg-desktop: url("../img/covers/covers-desktop-coral-bg.png");
+  --covers-bg-desktop-2x: url("../img/covers/covers-desktop-coral-bg@2x.png");
+}
+[data-theme="teal"] {
+  --theme-color: var(--color-teal);
+  --theme-color-hover: var(--color-teal-hover);
+  --theme-linear-gradient: var(--linear-gradient-teal);
+
+  --mobile-menu-bg: url("../img/mobile-menu/mobile-menu-teal-bg.png");
+  --mobile-menu-bg-2x: url("../img/mobile-menu/mobile-menu-teal-bg@2x.png");
+
+  --hero-bg-mobile: url("../img/hero/hero-mobile-teal-bg.png");
+  --hero-bg-mobile-2x: url("../img/hero/hero-mobile-teal-bg@2x.png");
+  --hero-bg-tablet: url("../img/hero/hero-tablet-teal-bg.png");
+  --hero-bg-tablet-2x: url("../img/hero/hero-tablet-teal-bg@2x.png");
+  --hero-bg-desktop: url("../img/hero/hero-desktop-teal-bg.png");
+  --hero-bg-desktop-2x: url("../img/hero/hero-desktop-teal-bg@2x.png");
+
+  --covers-bg-mobile: url("../img/covers/covers-mobile-teal-bg.png");
+  --covers-bg-mobile-2x: url("../img/covers/covers-mobile-teal-bg@2x.png");
+  --covers-bg-tablet: url("../img/covers/covers-tablet-teal-bg.png");
+  --covers-bg-tablet-2x: url("../img/covers/covers-tablet-teal-bg@2x.png");
+  --covers-bg-desktop: url("../img/covers/covers-desktop-teal-bg.png");
+  --covers-bg-desktop-2x: url("../img/covers/covers-desktop-teal-bg@2x.png");
 }

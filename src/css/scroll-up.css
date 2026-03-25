@@ -12,24 +12,7 @@
   opacity: 0;
   transform: translateY(25px);
   transition: color 0.2s ease-in;
-}
-[data-theme="blue"] .scroll-up {
-  background-color: var(--color-blue);
-}
-[data-theme="darkred"] .scroll-up {
-  background-color: var(--color-red);
-}
-[data-theme="yellow"] .scroll-up {
-  background-color: var(--color-yellow);
-}
-[data-theme="olive"] .scroll-up {
-  background-color: var(--color-green);
-}
-[data-theme="orange"] .scroll-up {
-  background-color: var(--color-orange);
-}
-[data-theme="teal"] .scroll-up {
-  background-color: var(--color-teal);
+  background-color: var(--theme-color);
 }
 .scroll-up::before {
   position: absolute;

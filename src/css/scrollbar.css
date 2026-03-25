@@ -7,26 +7,8 @@
   height: 200px;
   border-radius: 15px;
   border: 2px solid rgb(117 117 119);
+  background: var(--theme-linear-gradient);
 }
 ::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
-}
-
-[data-theme="blue"] ::-webkit-scrollbar-thumb {
-  background: var(--linear-gradient-blue);
-}
-[data-theme="darkred"] ::-webkit-scrollbar-thumb {
-  background: var(--linear-gradient-red);
-}
-[data-theme="yellow"] ::-webkit-scrollbar-thumb {
-  background: var(--linear-gradient-yellow);
-}
-[data-theme="olive"] ::-webkit-scrollbar-thumb {
-  background: var(--linear-gradient-green);
-}
-[data-theme="orange"] ::-webkit-scrollbar-thumb {
-  background: var(--linear-gradient-orange);
-}
-[data-theme="teal"] ::-webkit-scrollbar-thumb {
-  background: var(--linear-gradient-teal);
 }

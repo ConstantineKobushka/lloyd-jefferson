@@ -32,31 +32,14 @@
   margin-bottom: 32px;
 }
 .projects-link {
-  line-height: 1.1;
+  line-height: 1;
   color: var(--color-primary);
-  padding: 13px 32px;
+  padding: 14px 32px;
   border-radius: 60px;
   min-width: 141px;
-  height: 45px;
+  height: 44px;
   display: inline-block;
-}
-[data-theme="blue"] .projects-link {
-  background-color: var(--color-blue);
-}
-[data-theme="darkred"] .projects-link {
-  background-color: var(--color-red);
-}
-[data-theme="yellow"] .projects-link {
-  background-color: var(--color-yellow);
-}
-[data-theme="olive"] .projects-link {
-  background-color: var(--color-green);
-}
-[data-theme="orange"] .projects-link {
-  background-color: var(--color-orange);
-}
-[data-theme="teal"] .projects-link {
-  background-color: var(--color-teal);
+  background-color: var(--theme-color);
 }
 .projects-preview {
   padding: 100px 16px;
@@ -153,29 +136,9 @@
   .projects-link {
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  [data-theme="blue"] .projects-link:hover,
-  [data-theme="blue"] .projects-link:focus {
-    background-color: var(--color-blue-hover);
-  }
-  [data-theme="darkred"] .projects-link:hover,
-  [data-theme="darkred"] .projects-link:focus {
-    background-color: var(--color-red-hover);
-  }
-  [data-theme="yellow"] .projects-link:hover,
-  [data-theme="yellow"] .projects-link:focus {
-    background-color: var(--color-yellow-hover);
-  }
-  [data-theme="olive"] .projects-link:hover,
-  [data-theme="olive"] .projects-link:focus {
-    background-color: var(--color-green-hover);
-  }
-  [data-theme="orange"] .projects-link:hover,
-  [data-theme="orange"] .projects-link:focus {
-    background-color: var(--color-orange-hover);
-  }
-  [data-theme="teal"] .projects-link:hover,
-  [data-theme="teal"] .projects-link:focus {
-    background-color: var(--color-teal-hover);
+  .projects-link:hover,
+  .projects-link:focus {
+    background-color: var(--theme-color-hover);
   }
   .projects-preview {
     padding: 120px 37px;
