@@ -7,9 +7,9 @@ const reviewsSection = document.querySelector('.reviews');
 const reviewsListEl = document.querySelector('.reviews-wrapper');
 const reviewsNotFoundEl = document.querySelector('.reviews-not-found');
 const reviewsButtonsEl = document.querySelector('.reviews-btn-container');
-const reviewsSliderEl = document.querySelector('.reviews-slider');
+const reviewsSliderEl = document.querySelector('.reviews-swiper');
 
-const reviewsSwiper = new Swiper('.reviews-slider', {
+const reviewsSwiper = new Swiper('.reviews-swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 16,

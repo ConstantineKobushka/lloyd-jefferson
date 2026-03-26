@@ -4,7 +4,7 @@ import { attachSwiperKeyboardOnView } from './swiperWithObserver';
 
 const projects = document.querySelector('.projects');
 
-const projectsSlider = new Swiper('.projects-slider', {
+const projectsSlider = new Swiper('.projects-swiper', {
   slidesPerView: 1,
   spaceBetween: 16,
   slidesPerGroup: 1,

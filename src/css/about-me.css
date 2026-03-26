@@ -39,7 +39,7 @@
 .about-ac + .about-ac {
   margin-top: 20px;
 }
-.about-btn-svg {
+.about-ac-svg {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-ac-header {
@@ -59,7 +59,7 @@
 .about-ac-trigger::after {
   display: none;
 }
-.about-btn {
+.about-ac-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,10 +71,10 @@
   top: 0;
   right: 0;
 }
-.about-btn-svg {
+.about-ac-svg {
   stroke: var(--color-primary);
 }
-.about-ac.is-active .about-btn-svg {
+.about-ac.is-active .about-ac-svg {
   transform: rotate(180deg);
 }
 .about-ac.is-active .about-ac-header {
@@ -95,7 +95,7 @@
   margin-bottom: 10px !important;
 }
 
-.about-swiper-inner {
+.about-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -104,7 +104,7 @@
   width: 220px;
   margin-left: 0;
 }
-.about-swiper-slide {
+.about-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,7 @@
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about-swiper-slide.swiper-slide-active {
+.about-slide.swiper-slide-active {
   background-color: var(--theme-color);
   border: 1px solid transparent;
 }
@@ -130,7 +130,7 @@
 .about-swiper-btn-next svg {
   fill: none;
 }
-.about-swiper-arrow-svg {
+.about-swiper-svg {
   stroke: var(--color-disable);
 }
 
@@ -146,7 +146,7 @@
   .about-swiper {
     width: 260px;
   }
-  .about-swiper-slide {
+  .about-slide {
     width: 130px !important;
     height: 130px;
   }
@@ -174,7 +174,7 @@
   .ac.about-ac .ac-trigger.about-ac-trigger {
     min-height: 40px;
   }
-  .about-btn {
+  .about-ac-btn {
     width: 40px;
     height: 40px;
   }
@@ -184,7 +184,7 @@
   .about-swiper {
     width: 600px;
   }
-  .about-swiper-slide {
+  .about-slide {
     width: 200px !important;
     height: 200px;
   }
@@ -211,7 +211,7 @@
   .ac-trigger.about-ac-trigger {
     padding: 0px 0px 14px 0px;
   }
-  .about-btn {
+  .about-ac-btn {
     width: 40px;
     height: 40px;
   }

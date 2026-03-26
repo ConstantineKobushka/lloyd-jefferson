@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 
 import { attachSwiperKeyboardOnView } from './swiperWithObserver';
 
-const aboutSwiperInner = document.querySelector('.about-swiper-inner');
+const aboutSwiperInner = document.querySelector('.about-container');
 
 new Accordion(['.about-accordion-container'], {
   openOnInit: [0],

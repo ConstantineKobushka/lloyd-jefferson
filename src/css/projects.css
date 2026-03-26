@@ -1,4 +1,4 @@
-.projects-slider {
+.projects-swiper {
   margin-bottom: 32px;
 }
 .projects-slide {
@@ -79,7 +79,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .projects-slider {
+  .projects-swiper {
     margin-bottom: 64px;
   }
   .projects-content {
